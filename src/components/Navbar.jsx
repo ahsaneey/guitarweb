@@ -1,19 +1,23 @@
 import React from 'react'
-import {GiHamburgerMenu} from 'react-icons/gi'
+
 function Navbar() {
   return (
-   <nav className='absolute top-0 left-0 w-full pt-10 text-black z-20'>
-    <div className='container'>
-        <div className='flex justify-between items-center p-5'>
-        <h1 className='font-bold text-x1'>XPERIA</h1>
+    <nav className="flex justify-between items-center px-16 py-5">
+  <h1 className="font-bold text-xl">XPERIA</h1>
 
-    
-    <div>
-        <GiHamburgerMenu className='text-3xl cursor-pointer'/>
-     </div>
-    </div>
-    </div>
-   </nav>
+  <ul className="flex gap-8 text-sm">
+    <li className="text-orange-500 border-b-2 border-orange-500">Home</li>
+    <li>Parts</li>
+    <li>Services</li>
+    <li>All</li>
+  </ul>
+
+  <div className="flex gap-4">
+    <span>♡</span>
+    <span>👤</span>
+    <span>🛒</span>
+  </div>
+</nav>
   )
 }
 

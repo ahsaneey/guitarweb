@@ -1,6 +1,6 @@
 import React from 'react'
 import cycle2 from '../assets/cycle2.png' 
-import Navbar from './Navbar';
+
 import { motion } from 'framer-motion';
 
 function Hero() {
@@ -21,15 +21,13 @@ function Hero() {
         </motion.h1>
 
    
-      <motion.img 
+      <img 
         src={cycle2} 
-        alt='cycle'
-        initial={{opacity:1,y:0}}
-        animate={{opacity:1,y:0}}
-        transition={{duration:1.2}}
+        alt='cycle' 
         className='absolute w-[65%] max-w-[900px] h-auto object-contain z-10 drop-shadow-2xl'
       />
-      <Navbar/>
+     
+      
 
     </div>
   )

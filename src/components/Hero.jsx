@@ -22,10 +22,10 @@ function Hero() {
       <motion.img 
                   src={cycle2} 
                   alt='Xperia Unique Features' 
-                  initial={{ opacity: 0, x: 150, rotate: 5 }}
+                  initial={{ opacity: 0, x: -150, rotate: 5 }}
                   whileInView={{ opacity: 1, x: 0, rotate: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 1.2, ease: 'easeOut' }}
+                  viewport={{ once: false, amount: 0.3 }}
+                  transition={{ duration: 2, ease: 'easeOut' }}
                  className='absolute w-[65%] max-w-[900px] h-auto object-contain z-10 drop-shadow-2xl'
                 />
      

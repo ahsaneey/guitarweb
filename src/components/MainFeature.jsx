@@ -24,9 +24,9 @@ const FEATURES_DATA = [
 function MainFeature() {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
+     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.3 } 
+      transition: { staggerChildren: 1 } 
     }
   };
 
@@ -44,7 +44,7 @@ function MainFeature() {
           variants={containerVariants}
           initial='hidden'
           whileInView='visible' 
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           className='flex flex-col'
         >
           <span className='text-orange-500 font-bold tracking-widest uppercase text-xs mb-3'>
@@ -83,9 +83,9 @@ function MainFeature() {
           <motion.img 
             src={cycle2} 
             alt='Xperia Unique Features' 
-            initial={{ opacity: 0, x: 150, rotate: 5 }}
+            initial={{ opacity: 0, x: -150, rotate: 5 }}
             whileInView={{ opacity: 1, x: 0, rotate: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 1.2, ease: 'easeOut' }}
             className='w-full h-full object-contain mix-blend-multiply'
           />
